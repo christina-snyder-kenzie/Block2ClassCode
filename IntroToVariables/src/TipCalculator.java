@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TipCalculator {
     public static void main(String[] args) {
         //we need to know:
@@ -14,10 +16,19 @@ public class TipCalculator {
             //we need to know the tip amount
             //we need the final total
 
-        double subTotal = 40.25;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your subtotal: $");
+        String amount = scan.nextLine();
+        //Double.parseDouble()
+        //"40.25" -> 40.25
+        double subTotal = Double.parseDouble(amount);
         //should we represent 20% as 20 or 0.20?
-        double taxPercentage = 0.075;
-        double tipPercentage = .20;
+        System.out.print("Enter the tax as a decimal: ");
+        String tax = scan.nextLine();
+        double taxPercentage = Double.parseDouble(tax);
+        System.out.print("Enter the tip percentage as a decimal: ");
+        String tip = scan.nextLine();
+        double tipPercentage = Double.parseDouble(tip);
 
         double total = (subTotal * taxPercentage) + subTotal;
         //a different way=> subTotal * (1 + taxPercentage);

@@ -50,5 +50,14 @@ public class FunWithMath {
         System.out.println("F: " + f);
         System.out.println("G: " + g);
 
+        System.out.println(Double.MAX_VALUE);
+        System.out.println(Float.MAX_VALUE);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Long.MAX_VALUE);
+
+        System.out.println(Math.PI);
+
+        System.out.println(Math.pow(Math.PI, 2));
+
     }
 }

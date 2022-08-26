@@ -36,7 +36,7 @@ public class FunWithMath {
         int a = 7 / 2;
        // int b = 7.0 / 2;
         double c = 7.0 / 2;
-        double d = 7 / 2;
+        double d = 7 / 2; //7/2 -> 3 it's promoted to 3.0
         int e = (int) (7.0 / 2);
         double f = (double) 7 / 2;
         double g = (double) (7 / 2);

@@ -20,7 +20,10 @@ public class TipCalculator {
         System.out.print("Enter your subtotal: $");
         String amount = scan.nextLine();
         //Double.parseDouble()
+        //Integer.parseInt()
         //"40.25" -> 40.25
+
+        //"40.25" + 3 -> 40.253
         double subTotal = Double.parseDouble(amount);
         //should we represent 20% as 20 or 0.20?
         System.out.print("Enter the tax as a decimal: ");
@@ -30,7 +33,7 @@ public class TipCalculator {
         String tip = scan.nextLine();
         double tipPercentage = Double.parseDouble(tip);
 
-        double total = (subTotal * taxPercentage) + subTotal;
+        double total = subTotal * taxPercentage + subTotal;
         //a different way=> subTotal * (1 + taxPercentage);
         //PEMDAS (please excuse my dear aunt sally)
         //order of operations

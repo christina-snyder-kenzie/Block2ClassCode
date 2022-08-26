@@ -22,6 +22,15 @@ public class StringIntro {
         System.out.println(3 == 4);
         System.out.println(3.14 == 3.14);
 
+        /*
+        ==
+        !=
+        >
+        <
+        >=
+        <=
+         */
+
         String test = new String("hello");
         String other = new String("hello");
         System.out.println("test: " + test);

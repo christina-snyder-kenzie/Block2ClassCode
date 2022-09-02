@@ -66,6 +66,27 @@ public class ArrayIntro {
         guestList[5] = savedGuest;
         //A SWAP MUST have at least 3 lines
 
+        int[] arr = {7, 5, 1, 3};
+
+        //change the 3 to 152
+        arr[3] = 152; //arr[arr.length - 1] = 152
+        //when can we hardcode indexes?
+            //if its the first element -> that's always index 0
+            //if we know it's a specific size or array
+
+        //print out the second to last number using .length
+        System.out.println(arr[arr.length - 2]);
+
+        //swap the middle two numbers
+            //I would hardcode my indexes here
+            //I know the array is 7, 5, 1, 3
+            //So i'm just gonna swap indexes 1 and 2
+        int temp = arr[1];
+        arr[1] = arr[2];
+        arr[2] = temp;
+
+
+
 
     }
 }

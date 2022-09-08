@@ -51,6 +51,26 @@ while (x < nums.length){
 	x++;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //warmup #1
 int i = 0;
 while (i < nums.length){

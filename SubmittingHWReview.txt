@@ -1,0 +1,13 @@
+1. Accept the assignment on github
+2. git clone <ssh link>
+3. Do the work in intellij
+4. push to github
+	z. navigate to the git repository using cd
+	a. git add .
+	b. git commit -m "your message"
+	c. git push
+5. VERIFY THAT it worked. 
+	By looking at your repository for the commit message
+6. Grab the URL of the specific assignment respository
+	the link has your username and the assignment name in it
+7. Submit the link with answers to reflection questions (if any)

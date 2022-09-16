@@ -20,7 +20,9 @@ public class StringIntro {
 
         //implicit vs explicit parameters
             //implicit parameter comes BEFORE the dot
+                //at most 1
             //explicit parameters go INSIDE the parentheses
+                //0 to many
 
         //in general, methods are called like this:
             //implicitVar.methodName(explicitVars);
@@ -62,10 +64,12 @@ public class StringIntro {
         int posOfM = place.indexOf("m");
         System.out.println("m lives at position: " + posOfM);
         int posCapM = place.indexOf("M");
-        System.out.println("M lives at position: " + posCapM);
+        System.out.println("M lives at position: " + posCapM); // -1
         int posOfLomb = place.indexOf("lomb");  // 2
         int posOfBia = place.indexOf("bia");  //5
         int posOfO = place.indexOf("o"); //1 -> pos of the first guy
+
+        //boolean itExists = something.indexOf(smtgElse) >= 0;
 
         //replace(oldStr, newStr) -> replaces all instances of the oldStr with the new one
             //String updated = str.replace(oldStuff, newStuff);
@@ -76,6 +80,8 @@ public class StringIntro {
         //place = place.replace("", ""); //overwrite
         String noMs = place.replace("m", "");
         System.out.println(noMs);
+
+        place = place.replace("", "");
 
         //Strings are IMMUTABLE
             //-> they can never change

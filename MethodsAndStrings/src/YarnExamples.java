@@ -72,7 +72,7 @@ public class YarnExamples {
         System.out.println("result: " + result);
 
 
-
+        int sum = MyMethods.add(1, 2);
 
     }
 }

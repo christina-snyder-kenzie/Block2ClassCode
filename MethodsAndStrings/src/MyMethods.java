@@ -1,4 +1,5 @@
 public class MyMethods {
+
     public static void main(String[] args) {
         String x = "hello";
         x.length(); //instance method
@@ -36,6 +37,9 @@ public class MyMethods {
 
         System.out.println(spotTheLongest(zooAnimals));
 
+        int result2 = add(3, 4);
+        System.out.println(add(2, 5));
+
     } //ends my main method
 
     //write a method that calculates an exponent (a ^ b)
@@ -43,19 +47,26 @@ public class MyMethods {
     //You can use the multiply method
     //2^6 actually mean??
         //2*2*2*2*2*2
-    
-
+    //repeated multiplication
+    public static int calcExponent(int base, int power){
+        int toReturn = 1;
+        for (int i = 0; i < power; i = add(i, 1)){
+            toReturn = multiply(base, toReturn);
+        }
+        return toReturn;
+    }
     //write a method that takes two numbers, and multiplies them together
     //you are not allowed to use the '*' or '+', no MATH METHODs
     //3 x 5 -> 10
         //5 + 5 + 5
         //3 + 3 + 3 + 3 + 3
+
+    //4 * 6
+        //add 4, 6 times
     //multiplication is just repeated addition
     public static int multiply(int a, int b){
         int totalSoFar = 0;
-        for (int run = 0; run < b; run = add(1, run)){
-            //if b = 5, this loop runs 5 times
-            //in this loop, I need to add a
+        for (int run = 0; run < b; run = add(1, run)){ //run = 1 + run; //run += 1 // run+
             totalSoFar = add(a, totalSoFar);
         }
         return totalSoFar;

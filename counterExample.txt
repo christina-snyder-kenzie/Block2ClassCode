@@ -1,0 +1,22 @@
+init counter (int counter = 0;)
+loop (for (int i = 0; i < length; i++))
+	if statement 
+		(number > 0)
+		(number % 2 == 0)
+		(arr[i] == target)
+		(str.charAt(i) == target)
+		(str.substring(i, i + x).equals(target))
+
+		update (counter++;)
+
+present results (return or s.o.p)
+
+
+String word = "hello";
+int counter = 0;
+for (int i = 0; i < word.length(); i++){
+	char currLetter = str.charAt(i);
+	if (currLetter == 'l'){
+		counter++;
+	}
+}

@@ -41,11 +41,31 @@ for (int i = 0; i < word.length(); i++){
 System.out.println(counter);// -> the number of l's
 
 
+//TO MAKE an ArrayList
+
+ArrayList<DataType> name = new ArrayList<DataType>();
 
 
 
+//I want to collect negative numbers
 
 
+int[] array = {7, -5, -3, 2, 6, -8};
+		//-> {-5, -3, -8}
+
+//step 1: COUNT the negative numbers
+//step 2: make a new array
+int[] onlyNegatives = new int[count];
+//step 3: COLLECT/FILL the new array
+		//with the negatives
+
+int specialIndex = 0;
+for (int i = 0; i < array.length; i++){
+	if (array[i] < 0){
+		onlyNegatives[specialIndex] = array[i];
+		specialIndex++;
+	}
+}
 
 
 

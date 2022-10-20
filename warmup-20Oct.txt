@@ -1,0 +1,38 @@
+1. Object
+	-In code, object blueprints are classes
+	-Are datatypes
+	-Store information (data) in variables
+	-Usually nouns
+
+2. Object Oriented Programming (OOP)
+	-Coding with objects to solve a problem 
+
+3. Property 
+	-characteristic
+	-attribute
+	-In code, properties are variables
+		accessModifier dataType propertyName;
+
+4. Behavior
+	-doing something
+	-In code, behaviors are methods
+		public returnType methodName(parameters){ }
+	-ability to do something
+
+5. Constuctor 
+	-Can ask for specific data
+	-Purpose: Is to create objects
+	-Job: is to initialize properties
+		-We the programmer can set initial values
+		-We can take data from the user through parameters
+	-In code, constructors have a special format
+		public ClassName(parameters){
+			this.propertyName = propertyName;
+		}
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BuildingStrings {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder("I love pizza and popcorn");
+        StringBuilder sb = new StringBuilder("Hello, I love pizza and popcorn");
         char lastLetter = sb.charAt(sb.length() - 1);
 
         //GOAL: replace pizza with caramel

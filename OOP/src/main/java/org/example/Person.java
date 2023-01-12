@@ -17,12 +17,13 @@ public class Person {
     }
 
     public Person(String first, String last){
-        this.first = first;
+        /*this.first = first;
         this.last = last;
         DOB = "unknown";
         email = "unknown";
         phoneNumber = "unknown";
-        job = "unknown";
+        job = "unknown";*/
+        this(first, last, "unknown", "unknown", "unknown", "unknown");
     }
 
     //GOAL: write a good toString()
@@ -85,7 +86,10 @@ public class Person {
     }
 
     public void setFirst(String first) {
-        this.first = first;
+        //if (firstLetter is capital){
+            this.first = first;
+        //}
+
     }
 
     public String getLast() {

@@ -1,0 +1,60 @@
+car
+properties
+	car worth, seats, VIN
+methods??
+-getters
+-setters
+-toString
+
+dealership
+properties??
+list of cars
+
+methods
+	see that list of cars
+
+	sellCar(overload)
+		sellCar(VIN, money)
+			input: VIN, money
+			Output: Car or null
+
+			find the right car (by VIN)
+
+			conditions for car:
+				we have enough money
+				money >= car's worth
+			conditions for null:
+				the VIN is invalid
+				or we don't have enough money
+
+
+		sellCar(VIN, tradeInCar)
+		sellCar(VIN, money, tradeInCar)
+
+	DONE:
+		addCar
+loop with conditionals
+	3a. - cars below a targetprice
+		INPUT: an amount of money (8k) (technically, the inventory is an input)
+		
+		OUTPUT: a list of cars
+		
+Algorithm:
+init a list
+loop
+	if
+	its under 8000
+	its <= 8000
+	currentCar's worth <= 8000
+	currentCar's worth <= budgetPrice
+		collect into list
+
+	3b. - cars with a target numPassenger
+		INPUT:the number of seats
+		OUTPUT:arrayList<Car>
+
+		Algorithm:
+		init a list
+		loop over inventory
+			conditional->curr.getNumSeats == input
+				fill in the list with cars

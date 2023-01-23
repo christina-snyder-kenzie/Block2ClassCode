@@ -1,0 +1,25 @@
+public class ClassName{
+	properties
+		private dt varName;
+
+	constructors
+		JOB: initialize properties
+
+		public ClassName(params){
+			this.name = name;
+		}
+
+	methods
+		getters
+			public dt getThing(){
+				return thing;
+			}
+		setters
+			public void setThing(dt newThing){
+				thing = newThing;
+			}
+		toString
+			public String toString(){
+				return something;
+			}
+}

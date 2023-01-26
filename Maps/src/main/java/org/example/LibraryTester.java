@@ -23,5 +23,10 @@ public class LibraryTester {
 
         System.out.println(local.checkStock("The Lorax"));
         System.out.println(local.checkStock("Green eggs"));
+
+        String title = b5.getTitle();
+        System.out.println(title);
+        String title2 = b4.getTitle();
+        System.out.println(title2);
     }
 }

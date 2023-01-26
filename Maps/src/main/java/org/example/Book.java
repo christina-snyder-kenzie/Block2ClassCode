@@ -13,7 +13,7 @@ public class Book {
 
     //getters and setters
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public void setTitle(String title) {

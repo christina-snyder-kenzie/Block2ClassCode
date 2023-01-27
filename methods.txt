@@ -1,0 +1,67 @@
+String
+	.length() -> int
+	.charAt(index) -> char
+	.substring(start, stop) -> String
+	.substring(start) -> String
+	.indexOf(str) -> int
+	.replace(oldStr, newStr) -> String
+	.toLower/UpperCase() -> String
+	.equals(anotherStr) -> boolean
+	.toCharArray() -> char[]
+	.split(delimeter) -> String[]
+
+StringBuilder
+	.append(str) -> void or boolean? we don't care
+	.toString()
+	-other string methods
+	
+ArrayList
+	ArrayList<DT> list = new ArrayList<DT>();
+	.add(item)
+	.add(index, item);
+	.get(index) -> DT
+	.set(index, newThing) -> oldThing
+	.size() -> int
+	.contains(item) -> boolean
+	.remove(index) -> oldThing
+	.remove(object)
+		relies on .equals(), so until this week, it wouldn't have worked...
+HashMap
+	HashMap<K, V> map = new HashMap<K, V>();
+	.put(key, value);
+	.get(key) -> value
+	.getOrDefault(key, defaultValue) -> value or default
+	.replace(key, newValue);
+	.containsKey(key) -> boolean
+	.containsValue(value) -> boolean
+	.ketSet() -> Set<K>
+	.entrySet() -> Set<HashMap.Entry<K,V>>
+	.values() -> Collection<V>
+	.size() -> int
+Methods we write
+	public (static*) returnType methodName(parameters){
+		do stuff;
+	}
+
+	static* is required when writing helper methods for main
+
+	we don't write static* with instance methods (within classes)
+
+	public String toString() {return str;}
+
+	public boolean equals(Object other) {return true/false;}
+
+	getters:
+		public dt getVar() {return var;}
+
+	setters:
+		public void setVar(dt var) { this.var = var; }
+
+
+
+
+
+
+
+
+

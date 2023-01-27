@@ -1,0 +1,15 @@
+Practice. Combine(Book other) -> 
+
+Book b1 - the lorax, dr. Suess, children, 123456
+Book b2 - Abraham Lincoln's Biography, Some dude, non-fiction, 456789
+
+b1.combine(b2)
+the lorax & Abraham Lincoln's Biography, dr. Suess & dome dude, children & non-fiction, add the isbns
+
+what should happen to b1 and b2? 
+DO they stay the same and we make a b3?
+OR
+should we update b1 and b2 to have the combined book data
+Only b1?
+Only b2?
+Or Both? -> YES

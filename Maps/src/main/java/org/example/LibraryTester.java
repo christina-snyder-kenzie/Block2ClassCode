@@ -28,5 +28,34 @@ public class LibraryTester {
         System.out.println(title);
         String title2 = b4.getTitle();
         System.out.println(title2);
+        //System.out.println(b4.genre); ANGRY
+
+        String newTitle = b5.combine(b4);
+        System.out.println(b5);
+        System.out.println(b4);
+
+        //equals Vocabulary:
+        String x = "hello";
+        String y = new String("hello");
+
+        x.equals(y); //-> true because they have the same letters
+        //logical equality
+        x.equals(x); // true because of reflexivity (like a mirror reflection)
+
+        //symmetry:
+        x.equals(y);
+        //then
+        y.equals(x);
+
+        //Transitivity -> a.equals(b) and b.equals(c) -> then a.equals(c)
+        //Consistency -> same inputs, same result
+
+        //Non-Nullilty
+        x.equals(null); //-> always returns false
+        //if it's not false, it will NullPointerException
+
+        System.out.println(b2.equals(b3));
+        System.out.println(b2.equals(b2));
+        System.out.println(b4.equals(b5));
     }
 }

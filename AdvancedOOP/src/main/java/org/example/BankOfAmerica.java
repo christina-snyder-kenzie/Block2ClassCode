@@ -20,5 +20,29 @@ public class BankOfAmerica {
         System.out.println(s1.withdraw(200));
         System.out.println(s1);
 
+        for (int i = 0; i < 10; i++) {
+            s1.earnInterest();
+        }
+        System.out.println(s1);
+
+        //what would my balance be after 10 years?
+        //if I compound annually
+
+        System.out.println("------------");
+        CheckingAccount c1 = new CheckingAccount();
+        System.out.println(c1);
+
+        //Can I withdraw $500 5 times?
+        for (int i = 0; i < 5; i++){
+            System.out.println(c1.withdraw(500));
+        }
+        System.out.println(c1);
+
+        //After I attempt to WD $500 5 times
+        //Can I then withdraw $10 once?
+        System.out.println(c1.withdraw(10));
+        System.out.println(c1);
+
+
     }
 }

@@ -47,4 +47,25 @@ public class BankAccount {
     public String toString(){
         return "Balance: $" + balance;
     }
+
+    //transfer method
+    //b1.transfer(b2, 10);
+    //b1 gives b2 10 dollars
+    //b1's balance decreases
+    //b2's balance should increase
+
+    //should we return a string message?
+    //should we return a boolean and print the string message?
+    public boolean transfer(BankAccount b2, double amount){
+        //this.balance -= amount;
+        boolean itWorked = this.withdraw(amount);
+        if (itWorked){
+            //we have enough money...
+            b2.deposit(amount);
+            System.out.println("Transfer Successful!");
+        } else {
+            System.out.println("Incomplete Transfer");
+        }
+        return itWorked;
+    }
 }

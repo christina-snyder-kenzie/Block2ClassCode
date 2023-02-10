@@ -94,6 +94,7 @@ public class BankOfAmerica {
         System.out.println(bank1);
         System.out.println(checking1);
 
-
+        System.out.println("First number: " + b1.getAccountNumber());
+        System.out.println("last used: " + BankAccount.getLastAccountNumberUsed());
     }
 }

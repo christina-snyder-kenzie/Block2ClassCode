@@ -1,11 +1,24 @@
 package org.example;
 
 public class BankAccount {
+    private static int lastAccountNumberUsed = 999;
     private double balance;
+    private int accountNumber;
 
     public BankAccount(double balance){
         this.balance = balance;
         System.out.println("Print C");
+        lastAccountNumberUsed++;
+        accountNumber = lastAccountNumberUsed;
+    }
+
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+
+    public static int getLastAccountNumberUsed(){
+        //System.out.println(balance);
+        return lastAccountNumberUsed;
     }
 
     //overLOAD the constructor
@@ -45,7 +58,7 @@ public class BankAccount {
     //the SAME method, parameters, return types, method name, everything
     //We get to change the insides
     public String toString(){
-        return "Balance: $" + balance;
+        return "Balance: $" + balance + ", #" + accountNumber;
     }
 
     //transfer method

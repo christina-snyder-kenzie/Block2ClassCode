@@ -5,6 +5,8 @@ public class BankAccount {
     private double balance;
     private int accountNumber;
 
+    public static final double MIN_BALANCE = 100;
+
     public BankAccount(double balance){
         this.balance = balance;
         System.out.println("Print C");
@@ -13,6 +15,7 @@ public class BankAccount {
     }
 
     public int getAccountNumber(){
+        System.out.println("last one used: " + lastAccountNumberUsed);
         return accountNumber;
     }
 
@@ -43,7 +46,7 @@ public class BankAccount {
     }
 
     public boolean withdraw(double amount){
-        if (amount > balance){
+        if (amount > balance || (balance - amount) < MIN_BALANCE){
             System.out.println("Insufficient Funds... you're broke...");
             return false;
         } else {
@@ -80,5 +83,20 @@ public class BankAccount {
             System.out.println("Incomplete Transfer");
         }
         return itWorked;
+    }
+
+    //loan which takes in a credit score
+    //if you have good or excellent credit, we give you $200
+    //otherwise, get better credit...
+    public boolean loan(CreditScore score){
+        if (score == CreditScore.GOOD || score == CreditScore.EXCELLENT){
+            this.deposit(200);
+            return true;
+        } else {
+            System.out.println("Get better credit...");
+            System.out.println("Your credit score is: " + score.getNumberScore());
+            System.out.println("You need to raise it to at least: " + CreditScore.GOOD.getNumberScore());
+            return false;
+        }
     }
 }

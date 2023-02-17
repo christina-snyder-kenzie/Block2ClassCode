@@ -2,7 +2,7 @@ package org.example;
 
 import java.sql.SQLOutput;
 
-public class Animal {
+public abstract class Animal implements Measurable{
     private int numLegs;
     private double weight;
     private boolean hasEyes, isInjured, isBlind;
@@ -14,6 +14,13 @@ public class Animal {
         this.hasEyes = hasEyes;
         isInjured = false;
         isBlind = !hasEyes;
+    }
+
+    public abstract Animal[] reproduce();
+
+    //concrete = a thing with code
+    public double getMeasure() {
+        return weight;
     }
 
     public void eat(){

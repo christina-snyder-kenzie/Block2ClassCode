@@ -1,6 +1,6 @@
 package org.example;
 
-public class BankAccount {
+public class BankAccount implements Measurable{
     private static int lastAccountNumberUsed = 999;
     private double balance;
     private int accountNumber;
@@ -12,6 +12,10 @@ public class BankAccount {
         System.out.println("Print C");
         lastAccountNumberUsed++;
         accountNumber = lastAccountNumberUsed;
+    }
+
+    public double getMeasure(){
+        return balance;
     }
 
     public int getAccountNumber(){

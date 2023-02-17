@@ -1,6 +1,6 @@
 package org.example;
 
-public class Reptile extends Animal{
+public abstract class Reptile extends Animal{
     //call to super()
     private double bodyTemp;
     private String scaleColor;
@@ -42,6 +42,16 @@ class Snake extends Reptile {
     public Snake(double weight, double bodyTemp, String scaleColor, boolean isVenomous){
         super(0, weight, true, bodyTemp, scaleColor);
         this.isVenomous = isVenomous;
+    }
+
+    public Animal[] reproduce(){
+        //snakes have a random number of babies between 10 and 30
+        int numBabies = (int) (Math.random() * 20 + 10);
+        Animal[] babySnakes = new Animal[numBabies];
+        for (int i = 0; i < numBabies; i++){
+            babySnakes[i] = new Snake(this.getWeight() * 0.05, this.getBodyTemp(), "green", false);
+        }
+        return babySnakes;
     }
 
     public void eat(){

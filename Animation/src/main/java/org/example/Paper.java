@@ -11,6 +11,7 @@ public class Paper extends JComponent {
         g.drawLine(10, 10, 100, 100);
         g.drawLine(100, 100, 190, 10);
 
+
         Rectangle rect = new Rectangle(50, 100, 100, 50);
 
         Graphics2D g2 = (Graphics2D) g;
@@ -24,6 +25,10 @@ public class Paper extends JComponent {
         Ellipse2D.Double oval = new Ellipse2D.Double(50, 100, 100, 50);
         g2.setColor(Color.BLUE);
         g2.draw(oval);
+        for (int i = 0; i < 10; i++) {
+            rect.translate(10, 10);
+            g2.draw(rect);
+        }
 
     }
 }

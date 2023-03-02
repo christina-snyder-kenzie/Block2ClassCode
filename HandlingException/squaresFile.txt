@@ -1,0 +1,6 @@
+hello, world!
+7 squared is 49
+5 squared is 25
+1 squared is TOO SMALL
+3 squared is TOO SMALL
+8 squared is 64

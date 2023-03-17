@@ -24,7 +24,7 @@ public class APIConnector {
         }
     }
 
-    public static String makeGETRequest(String url) throws IOException, InterruptedException{
+    public static String makeGETRequest(String url){
         //setting up the query/call
         HttpClient client = HttpClient.newHttpClient(); //THis guy connects to the internet
         URI uri = URI.create(url); //URI is an umbrella term for URLs
@@ -33,7 +33,7 @@ public class APIConnector {
                 .header("Accept", "application/json") //holds meta-data (information about data)
                 .GET()
                 .build();
-        //try {
+        try {
             HttpResponse<String> httpResponse = client.send(request, HttpResponse.BodyHandlers.ofString()); //the MAGIC
             int statusCode = httpResponse.statusCode(); //a secret code that tells you how it went
             //in general, 200s are good, 400-500s are bad
@@ -43,9 +43,9 @@ public class APIConnector {
                 // String.format is fun! Worth a Google if you're interested
                 return String.format("GET request failed: %d status code received", statusCode);
             }
-        //} catch (IOException | InterruptedException e) {
-         //   return e.getMessage();
-        //}
+        } catch (IOException | InterruptedException e) {
+            return e.getMessage();
+        }
     }
 
     public static void main(String[] args) {
@@ -80,6 +80,15 @@ public class APIConnector {
             BabyTVDTO DTO = convertBaby(jsonResponse);
             System.out.println("Show Name: " + DTO.getName());
             System.out.println("Show language: " + DTO.getLanguage());
+
+            //What time does this show air?
+                //Gonna need to:
+                    //Make the TVDTO with the data!
+                    //Get the schedule
+                    //Then, get the time
+            ObjectMapper mapper = new ObjectMapper();
+            TVDTO tvdto = mapper.readValue(jsonResponse, TVDTO.class);
+            System.out.println(tvdto.getSchedule().getTime());
         } catch (Exception e){
             System.out.println(e);
         }

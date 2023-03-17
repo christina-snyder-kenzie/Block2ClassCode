@@ -1,0 +1,44 @@
+Given a character name, what are the names of the films they have been in?
+
+	Given a character name-> How do you know their ID number?
+			I looped over ID Numbers and collected all the names and made a map
+	
+	Given an ID number, can we find all the movie titles for that person?
+		1. Build the URL
+		2. Go to the person (with the API?)
+			We use MakeGETRequest
+		3. Now we have JSON
+		4. We make a DTO
+		5. THen we map the JSON to the DTO
+		6. Find the Film Links
+		7. Click each Link
+			Then get the titles
+
+	
+
+
+
+
+	From the film link, get the title
+		I need: JSON and a DTO
+		Where does the JSON come from?
+			From the API
+				How do we get it?
+					URL (Make a GET request with http)
+		Once I have the JSON, I can build the DTO
+		Then I can use the Mapper
+		THEN I can get the title
+
+
+
+
+
+
+
+
+
+
+
+
+
+

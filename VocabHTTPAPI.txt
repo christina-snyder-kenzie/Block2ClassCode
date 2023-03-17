@@ -1,0 +1,90 @@
+URL: Uniform Resource Locator
+	File, Image, video
+	HTML File-> browsers will render that
+URI: Uniform Resource Identifier
+
+HTML -> HyperText Markup Language
+	MarkupLanguage: code that makes things look a certain way
+
+API -> Application Programming Interface
+	Defines how you interact a service
+
+Service -> Something that does a task for you
+	Google- Searching Service
+	Twitter- Posting/Viewing Service
+	TVMaze- Allows us to access TV SHow information
+
+	Interfaces: Collection of abstract methods
+		The provide a guideline for a class
+		Defines how you act with a class
+
+REST APIs
+	REST- Representational State Transfer
+		REST Describes rules for APIs
+		If an API follows all the rules, it is RESTful
+
+HTTP: HyperText Transfer Protocol
+	Protocol: Instructions/rules
+
+
+URLS:
+https://api.tvmaze.com/singlesearch/shows?q=girls
+
+https://
+	Protocol
+
+api.tvmaze.com
+	Domain (Which Server to look at)
+		Servers have addresses, IP Addresses
+		Your Internet Service Provider (xfinity, charter, etc) takes the domain and translates it to an IP Address
+
+/singlesearch/shows
+	Path -> Where to go on that server
+
+?
+	Begins a query (question, request)
+
+q=girls
+	Query String-> Holds information about the request
+		Key=Value
+
+
+https://www.youtube.com/watch?v=YX40hbAHx3s
+
+https://youtu.be/YX40hbAHx3s?t=67
+
+https://www.youtube.com/watch?v=YX40hbAHx3s&t=67s
+
+https://api.tvmaze.com/singlesearch/shows?q=girls
+
+https://api.tvmaze.com/singlesearch/shows?q=cutthroat%20kitchen
+
+
+What comes next?
+
+We do this in java...
+
+
+1. We need URLs
+	We have to build those- String manipulation
+2. Connect to the internet
+	HttpClient
+3. Make the API Call
+	HttpRequests (this is like hitting enter in thr browser)
+4. Retreive the JSON
+	HttpResponse
+5. We do someting with that...
+	DTOs come in
+		Plain Old Java Objects (just properties and getters/setters)
+
+
+To Do something with JSON:
+1. Get the JSON
+2. Make the DTO
+3. Make an ObjectMapper
+4. Read the JSON with the mapper
+5. Now we can do stuff with our DTO!
+
+
+
+

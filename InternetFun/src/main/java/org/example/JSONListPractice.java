@@ -42,6 +42,8 @@ public class JSONListPractice {
             String grapeJSON = mapper.writeValueAsString(grapeNuts);
             System.out.println(grapeJSON);
 
+
+            //Making a PUT Request
             String JSONPUTString = "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}";
             String response = makePUTRequest("https://dummy.restapiexample.com/api/v1/update/21", JSONPUTString);
             System.out.println(response);

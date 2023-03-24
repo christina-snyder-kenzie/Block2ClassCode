@@ -1,0 +1,32 @@
+If I tell you the name of a disney movie, can you show me pictures of the cast?
+	(No, you cannot google it)
+
+1. We need to find out the movie
+	Scanner
+2. Build the URL
+3. Make a DTO
+4. Make an HTTP Request to get the JSON
+5. Map the JSON to the DTO
+5.2. I want to see the names of the characters
+
+6. Compile the IMG URLs
+7. Write to an HTML File
+8. Rejoice with lemons
+
+
+
+The Cast Names
+	Build a URL with a film query
+	Get the characters if it has that title 
+		(for the FILM)
+	We need a DTO 
+		We can dig into the JSON (and get the image URL)
+
+
+How do we get the pictures?
+	Image Link (image URL)
+		How do we get the URLS?
+			https://disneyapi.dev/
+
+How do we SEE the pictures?
+	We build an HTML file

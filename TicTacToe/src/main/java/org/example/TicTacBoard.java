@@ -188,6 +188,6 @@ public class TicTacBoard {
         System.out.println(board.getBoard()[1][0]);
         board.displayWithLabels();
         System.out.println(board.determineWinner());
-    }2
+    }
 
 }

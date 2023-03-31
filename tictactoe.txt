@@ -1,0 +1,70 @@
+Make a n-sized tic-tac-toe game with a save/load feature if you can't finish a game and want to come back to it
+
+Terminal based game (no GUI)
+
+Board
+	nXn
+
+Scanner
+
+Players
+
+For Loops/While loops?
+	while (board.determineWinner == Result.KEEP_GOING){
+		keep playing/take a turn
+	}
+
+
+Objects we'll need:
+
+	Play Class
+		Init Players (determine 2 players or 1 vs comp)
+		Turn tracker -> two booleans
+			Maybe 1 boolean -> isPlayer1sTurn
+		Main method
+			While loop
+
+	Player Class
+		Symbol (x or o) (any symbol?) 
+		PutOnBoard(board object)
+			SUBCLASS: ComputerPlayer
+				PutOnBoard(board object)
+					randomly chooses an open spot
+
+	Board Class
+		constructor
+			brand new game
+			load an old game
+
+		Grid of spots
+		2D Array -> of Strings
+
+		makeMove(row, col, symbol)
+
+		See the board (method)
+			toString()
+			DisplayWithLabels()
+
+		Result determineWinner(){
+			p1 wins
+			p2 wins
+			draw
+			absence of a winner (keep playing?)
+		}
+
+	Result enum
+		P1_WINS
+		P2_WINS
+		DRAW
+		KEEP_PLAYING
+
+	Saver/Loader class
+		static methods: 
+			save (board)
+				User input the file name?
+			load (read in the file and return a populated board)
+
+
+
+
+

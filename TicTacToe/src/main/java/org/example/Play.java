@@ -12,6 +12,22 @@ public class Play {
         p1sTurn = true;
     }
 
+    //overload the constructor:
+        //add another parameter: a boolean
+    //If the boolean is TRUE: we have TWO computer players
+    //if the boolean FALSE: we have one real player, one computer player
+    public Play(int size, boolean doubleTrouble){
+        if (doubleTrouble){
+            p1 = new ComputerPlayer("X");
+            p2 = new ComputerPlayer("O");
+        } else {
+            p1 = new TicTacPlayer("X");
+            p2 = new ComputerPlayer("O");
+        }
+        board = new TicTacBoard(size);
+        p1sTurn = true;
+    }
+
     public void runGame(){
         //loop (while keep going)
         while (board.determineWinner() == Result.KEEP_GOING) {
@@ -32,7 +48,7 @@ public class Play {
     }
 
     public static void main(String[] args) {
-        Play game = new Play(3);
+        Play game = new Play(3, true);
         game.runGame();
     }
 }

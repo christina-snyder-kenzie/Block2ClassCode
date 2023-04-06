@@ -9,6 +9,10 @@ public class TicTacPlayer {
     public TicTacPlayer(String symbol){
         this.symbol = symbol;
     }
+
+    public String getSymbol(){
+        return symbol;
+    }
     //methods
     public void putOnBoard(TicTacBoard board){
         int row = -1 , col = -1;

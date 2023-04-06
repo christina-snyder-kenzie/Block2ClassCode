@@ -188,6 +188,14 @@ public class TicTacBoard {
         System.out.println(board.getBoard()[1][0]);
         board.displayWithLabels();
         System.out.println(board.determineWinner());
+
+        Logger.save(board, "save.txt");
+
+        System.out.println("---ABOUT TO LOAD---");
+        TicTacBoard loaded = Logger.load("save.txt");
+        loaded.displayWithLabels();
+        loaded.makeMove(0, 0, "X");
+        loaded.displayWithLabels();
     }
 
 }

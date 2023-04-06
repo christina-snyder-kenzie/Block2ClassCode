@@ -27,6 +27,41 @@ Objects we'll need:
 	Player Class
 		Symbol (x or o) (any symbol?) 
 		PutOnBoard(board object)
+			
+			we can use a scanner
+			we ask them for row/col
+			verify the row/col
+			call makeMove(row, col, symbol)
+				symbol we have- thats the property
+
+			1. They give us good data
+			2. They give us numbers out of bounds
+			3. They don't give us numbers (otherwise, words)
+			4. They don't type anything
+
+
+			int row = -1, col = -1;
+			do {
+				stuff
+				always does stuff at least once
+				use scanner to retrieve user input
+				
+				String rowResponse = scan.nextLine();
+				try {
+					row = Integer.parseInt(rowResponse);
+				} catch (Whatevber exception){
+					sout("Hey! give me good data.");
+				}
+
+			} while(row is OOB || col is OOB);
+
+			vs
+
+			while (cond){
+				do stuff
+			}
+				
+
 			SUBCLASS: ComputerPlayer
 				PutOnBoard(board object)
 					randomly chooses an open spot

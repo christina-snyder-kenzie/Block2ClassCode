@@ -1,0 +1,16 @@
+select <columns>
+	as newName
+	distinct -> unique values
+	count(*) to find amount of data
+from <table>
+where <condition>
+	in (list of data)
+order by <column>
+	asc | desc (for ordering)
+limit <amount>
+	limit <offset>, <amount>
+
+
+
+
+
